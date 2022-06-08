@@ -28,11 +28,14 @@
 
 
 <div id="googleMap">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.
-30618005454!2d5.752799315985624!3d52.43736815010204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7d3223fffffff%
-3A0x91aed5984b133ea9!2sDefqon.1!5e0!3m2!1sen!2snl!4v1654153499814!5m2!1sen!2snl" width="600" height="450" style="border:0;" 
-allowfullscreen="" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1554.0003037231672!2d5.437379558721924!3d51.498295700000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6dc23cce5a449%3A0x1c7248dbf49cc35b!2sAquabest!5e1!3m2!1sen!2snl!4v1654673726645!5m2!1sen!2snl"
+width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 </div>
 </body>
+
+
+
+
 
 <?php require_once "footer.php"; ?>
