@@ -5,7 +5,7 @@
 <html>
     
 <head>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="shortcut icon" href="img/logo.png" />
     <title>Contact | Dylano Valentijn</title>
 </head>

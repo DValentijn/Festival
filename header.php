@@ -1,6 +1,6 @@
 <html>
 <head>
-<link rel="stylesheet" href="head.css" type="text/css">
+<link rel="stylesheet" href="css/head.css" type="text/css">
 <div class="navbar">
     <img src="img/bg.png" name="navbar" style="display: flex;align-items: center; position: relative; margin: 0 auto;height: inherit;width:100%; float:right;"/>
     <div class='navbaritems' style='position: absolute; align-items: center; margin-left: 100px; margin-top: 35px; font-size: 30px;'>

@@ -2,7 +2,7 @@
 <?php require_once "header.php"; ?>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="w3.css" type="text/css">
     <link rel="shortcut icon" href="img/logo.png" />
     <title>Line-up festival | Dylano Valentijn</title>
