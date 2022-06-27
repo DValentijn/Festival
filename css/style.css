@@ -108,6 +108,9 @@ justify-content: space-around;
 
 
 .footerbar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
   height: 100px;
   text-align: center;
@@ -143,3 +146,8 @@ justify-content: space-around;
 
 p {font-size: 12px;}
 .lineup {text-align: center;}
+
+.login {
+  align-content: center;
+  display: block;
+}

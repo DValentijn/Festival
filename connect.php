@@ -1,7 +1,7 @@
 <?php
 
 $servername = "localhost";
-$dbname = "blijdorp";
+$dbname = "festival";
 $username = "root";
 $password = "";
 

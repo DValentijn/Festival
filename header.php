@@ -8,6 +8,7 @@
   <li><a href="home.php">Home</a></li>
   <li><a href="line-up.php">Line-up</a></li>
   <li><a href="contact.php">Contact</a></li>
+  <li><a href="nieuws.php">Nieuws</a></li>
 </ul>
     </div>
 </div>
