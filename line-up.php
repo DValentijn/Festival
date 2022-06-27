@@ -49,3 +49,14 @@
 </html>
 
 <?php require_once "footer.php"; ?>
+
+
+
+
+
+
+
+
+
+
+<img src="<?php echo $image ?>"> </a>
