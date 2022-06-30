@@ -9,6 +9,7 @@
   <li><a href="line-up.php">Line-up</a></li>
   <li><a href="contact.php">Contact</a></li>
   <li><a href="nieuws.php">Nieuws</a></li>
+  <li><a href="bestel.php">Winkel</a></li>
 </ul>
     </div>
 </div>

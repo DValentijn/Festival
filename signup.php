@@ -23,7 +23,7 @@
             </div>
             <?php
                 if (isset($_POST["btnRegistreren"])){
-                    $username = $_POST["username"];
+                    $gebruikersnaam = $_POST["username"];
                     $password = $_POST["password"];
                     $password2 = $_POST["password2"];
 
@@ -32,7 +32,7 @@
                 
 
                         
-                    $query = "INSERT INTO users (username, password) VALUES ('$username', '$passwordHash')";
+                    $query = "INSERT INTO users (username, password) VALUES ('$gebruikersnaam', '$passwordHash')";
                     $stm = $pdo->prepare($query);
                     if ($stm->execute())
                     {

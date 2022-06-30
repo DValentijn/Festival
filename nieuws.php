@@ -9,17 +9,22 @@
     </head>
     <body>
 
-    <div class="lineup">
-  <div class="test">
-  <h2>De line-up is eindelijk klaar!</h2>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
-  <div class="test">
-  <h2>Hello world!</h2>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
-    <div class="test">
-  <h2>Hello world 2!</h2>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
+    <?php
+    $stm = $pdo->query("SELECT * FROM nieuwsitems");
+    ?>
 
+<div class="lineup">
+        <?php
+        if ($stm->execute()) {
+        $nieuwsitems = $stm->fetchAll(PDO::FETCH_OBJ);
+        foreach ($nieuwsitems as $ni) { ?>
+            <div class="test">
+            <h2><?php echo "$ni->kopje" ?></h2>
+            <p><?php echo "$ni->txt" ?></p> 
+            <?php 
+    } 
+      }?>
+      </div>
 </div>
 
     </body>

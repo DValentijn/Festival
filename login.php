@@ -14,10 +14,10 @@ require "connect.php";
 <body>
 <div class="login">
             <form method="POST">
-            <label for="username"> Gebruikersnaam:</label>
+            <label for="username"> Gebruikersnaam</label></br>
             <input type="text" name="username" id="username" placeholder="Geberuikersnaam"/>
             <br/> 
-            <label for="password"> Wachtwoord:</label>
+            <label for="password"> Wachtwoord</label></br>
             <input type="password" name="password" id="password" placeholder="Wachtword"/>
             <br/> 
             <input type="submit" name="btnLogin" value="Login" />
@@ -27,16 +27,16 @@ require "connect.php";
             <?php
                 if(isset($_POST['btnLogin']))
                 {
-                    $username = $_POST['username'];
+                    $gebruikersnaam = $_POST['username'];
                     $password = $_POST['password'];
 
-                    $query = "SELECT * FROM `users` WHERE `username`='$username'";
+                    $query = "SELECT * FROM `users` WHERE `username`='$gebruikersnaam'";
 
                     $stm = $pdo->prepare($query);
                     if($stm->execute()){
-                        $username = $stm->fetch(PDO::FETCH_OBJ);
-                        if(password_verify($password, $username->password)) {
-                            $_SESSION['username'] = $username;
+                        $gebruikersnaam = $stm->fetch(PDO::FETCH_OBJ);
+                        if(password_verify($password, $gebruikersnaam->password)) {
+                            $_SESSION['username'] = $gebruikersnaam;
                             Header("Location: home.php");
                         }else{
                             echo "fout";
