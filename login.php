@@ -12,6 +12,8 @@ require "connect.php";
 </head>
 
 <body>
+<div class="flexbox">
+  <div class="flexinput">
 <div class="login">
             <form method="POST">
             <label for="username"> Gebruikersnaam</label></br>
@@ -22,7 +24,8 @@ require "connect.php";
             <br/> 
             <input type="submit" name="btnLogin" value="Login" />
             </br></br><a href="signup.php">Registreren</a>
-
+</div>
+</div>
 
             <?php
                 if(isset($_POST['btnLogin']))

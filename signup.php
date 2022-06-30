@@ -7,20 +7,24 @@
     <title>Sign up festival | Dylano Valentijn</title> 
     </head>
     <body>
+    <div class="flexbox">
+  <div class="flexinput">
     <div class="Registreren">
                 <form method="POST">
-                <label for="username"> Gebruikersnaam:</label>
+                <label for="username"> Gebruikersnaam:</label></br>
                 <input type="text" name="username" id="username" placeholder="Geberuikersnaam"/>
                 <br/> 
-                <label for="password"> Wachtwoord:</label>
+                <label for="password"> Wachtwoord:</label></br>
                 <input type="password" name="password" id="password" placeholder="Wachtword"/>
                 <br/>
-                <label for="password2"> Wachtwoord verification:</label>
-                <input type="password" name="password2" id="password2" placeholder="wachtword"/>
-                <input type="submit" name="btnRegistreren" value="Registreren" />
+                <label for="password2"> Wachtwoord verification:</label></br>
+                <input type="password" name="password2" id="password2" placeholder="wachtword"/></br>
+                <input type="submit" name="btnRegistreren" value="Registreren" /></br></br>
                 <a href="login.php">Login</a>
                 </form>
             </div>
+</div>
+</div>
             <?php
                 if (isset($_POST["btnRegistreren"])){
                     $gebruikersnaam = $_POST["username"];

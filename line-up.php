@@ -7,41 +7,30 @@
     <link rel="shortcut icon" href="img/logo.png" />
     <title>Line-up festival | Dylano Valentijn</title>
 
+    <h1>Onze line-up tijdens het festival!</h1>
+    <div class='flexbox'>
+<?php 
+$stm = $pdo->query("SELECT * FROM lineup ORDER BY `naam` ASC");
 
+if ($stm->execute()) {
+  $artiesten = $stm->fetchAll(PDO::FETCH_OBJ);
+  foreach ($artiesten as $artiest) {
+
+  
+
+  echo 
+  "<div class='flexinput'>".
+    "<a href='$artiest->link' target='_blank'> <img src='$artiest->foto'> </a>".
+    "<h2>$artiest->naam</h2>".
+  "</div>";
+
+  }
+}
+?>
+</div>
 </head>
 <body>
 
-
-<h1>Onze line-up tijdens het festival!</h1>
-<div class="flexbox">
-  <div class="flexinput">
-  <a href="https://www.snollebollekes.nl/" target="_blank"> <img src="https://www.totalloss.nl/wp-content/uploads/Total-Loss-2022-snollebollekes-1.png"> </a>
-  <h2>Snollebollekes</h2></div>
-  <div class="flexinput">
-  <a href="https://www.instagram.com/gerard_joling/?hl=en" target="_blank"> <img src="https://www.totalloss.nl/wp-content/uploads/Total-Loss-2022-gerard-joling.png"> </a>
-  <h2>Gerard Joling</h2></div>
-  <div class="flexinput">
-  <a href="https://fransbauer.nl/" target="_blank"> <img src="https://www.totalloss.nl/wp-content/uploads/Total-Loss-2022-frans-bauer.png"> </a>
-  <h2>Frans Bauer</h2></div>
-  <div class="flexinput">
-  <a href="https://renekarst.nl/" target="_blank"> <img src="https://www.totalloss.nl/wp-content/uploads/Total-Loss-2022-rene-karst.png"> </a>
-  <h2>Rene Karst</h2></div>
-</div>
-
-<div class="flexbox">
-  <div class="flexinput">
-  <a href="https://marthoogkamer.nl/home" target="_blank"> <img src="https://www.totalloss.nl/wp-content/uploads/Total-Loss-2022-mart-hoogkamer.png">  </a> 
-  <h2>Mart Hoogkamer</h2></div>
-  <div class="flexinput">
-  <a href="https://janbiggel.nl/" target="_blank"> <img src="https://www.totalloss.nl/wp-content/uploads/Total-Loss-2022-jan-biggel.png"> </a> 
-  <h2>Jan Biggel</h2></div>
-  <div class="flexinput">
-  <a href="http://roydonders.tv/" target="_blank"> <img src="https://www.totalloss.nl/wp-content/uploads/Total-Loss-2022-roy-donders.png"> </a>
-  <h2>Roy Donders</h2></div>
-  <div class="flexinput">
-  <a href="https://www.hakopdetakdj.nl/" target="_blank"> <img src="https://www.totalloss.nl/wp-content/uploads/Total-Loss-2022-hak-op-de-tak.png"> </a>
-  <h2>Hak op de tak</h2></div>
-</div>
 
 
 </body>

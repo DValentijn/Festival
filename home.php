@@ -8,7 +8,7 @@
     <title>Homepage festival | Dylano Valentijn</title>
 </head>
 <body>
-    <h2>Dit is de homepagina en deze is nog niet af!</h2>
+
 </body>
 
     <?php require_once "footer.php"; ?>

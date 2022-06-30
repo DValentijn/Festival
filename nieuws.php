@@ -13,17 +13,18 @@
     $stm = $pdo->query("SELECT * FROM nieuwsitems");
     ?>
 
-<div class="lineup">
+<div class="flexbox">
         <?php
         if ($stm->execute()) {
         $nieuwsitems = $stm->fetchAll(PDO::FETCH_OBJ);
-        foreach ($nieuwsitems as $ni) { ?>
-            <div class="test">
-            <h2><?php echo "$ni->kopje" ?></h2>
-            <p><?php echo "$ni->txt" ?></p> 
-            <?php 
+        foreach ($nieuwsitems as $ni) {
+            echo
+            "<div class='flexinput' style='background-color: rgb(23, 91, 150)'; border-radius: 10px;>".
+            "<h2>$ni->kopje</h2>".
+            "<p class='flex-p'>$ni->txt</p></div>";
     } 
       }?>
+      
       </div>
 </div>
 
